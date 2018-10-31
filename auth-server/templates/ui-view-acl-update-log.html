@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>ACL Update Log | FCCH Access Control</title>
+{% if running %}
+<meta http-equiv="refresh" content="1" /> 
+{% endif %}
+</head>
+<body>
+<h1>
+ACL Update Log
+{% if running %}
+(CURRENTLY RUNNING; PLEASE WAIT...)
+{% endif %}
+</h1>
+<pre>
+{{content}}
+</pre>
+</body>
+</html>

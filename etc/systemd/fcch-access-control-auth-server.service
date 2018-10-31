@@ -1,0 +1,13 @@
+[Unit]
+Description=FCCH Access Control Authentication Server
+Requires=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/fcch-access-control/bin/auth-server.sh
+Restart=always
+User=fcchaccess
+Group=fcchaccess
+
+[Install]
+WantedBy=multi-user.target

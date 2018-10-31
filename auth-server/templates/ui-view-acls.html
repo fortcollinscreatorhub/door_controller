@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>ACLs | FCCH Access Control</title>
+</head>
+<body>
+<h1>ACLs</h1>
+{% if acls %}
+<ul>
+{% for acl in acls %}
+  <li><a href="/ui/view-acl/{{acl}}">{{acl}}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No ACLs defined!</p>
+{% endif %}
+</body>
+</html>
+

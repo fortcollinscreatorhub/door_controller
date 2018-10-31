@@ -1,0 +1,13 @@
+[Unit]
+Description=FCCH Access Control Door Controller
+Requires=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/fcch-access-control/bin/door-controller.sh
+Restart=always
+User=fcchaccess
+Group=fcchaccess
+
+[Install]
+WantedBy=multi-user.target
